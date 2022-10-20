@@ -1,5 +1,4 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    # try:
     if len(word) > 100:
         raise RecursionError
     if word == '':
@@ -12,6 +11,3 @@ def is_palindrome_recursive(word, low_index, high_index):
         high_index -= 1
 
     return True
-
-
-is_palindrome_recursive('', 0, len('')-1)
